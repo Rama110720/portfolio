@@ -2,13 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/portfolio/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/portfolio/vite.svg" /> <!-- Pastikan path ini benar jika Anda memiliki favicon -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <script type="module" crossorigin src="/portfolio/assets/index-CEjtesrW.js"></script>
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-Dw0QL1P4.css">
+    <title>Portofolio Canggih Saya</title> <!-- Judul yang lebih baik -->
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r150/three.min.js"></script>
+
+    <style>
+      /* Animasi kustom */
+      .font-inter {
+        font-family: 'Inter', sans-serif;
+      }
+      .animate-fade-in-up {
+        animation: fadeInUp 1s ease-out forwards;
+        opacity: 0;
+      }
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in-section {
+        animation: fadeInSection 1s ease-out forwards;
+        opacity: 0;
+      }
+      @keyframes fadeInSection {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
+    <!-- Vite akan menyuntikkan bundle main.jsx di sini secara otomatis -->
   </body>
 </html>
